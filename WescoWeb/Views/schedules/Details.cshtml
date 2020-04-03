@@ -1,0 +1,42 @@
+﻿@model WescoWeb.Models.schedule
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>schedule</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.hours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hours)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.scheduleID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

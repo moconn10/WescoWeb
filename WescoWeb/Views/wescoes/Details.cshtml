@@ -1,0 +1,42 @@
+﻿@model WescoWeb.Models.wesco
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>wesco</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.managerfname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.managerfname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.managerlname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.managerlname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.wescoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
